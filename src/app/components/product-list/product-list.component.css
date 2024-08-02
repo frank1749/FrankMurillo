@@ -1,0 +1,25 @@
+.btn-add-data{
+    background-color: #f5df66 !important;
+    color: #182f62 !important;
+    padding: 20px;
+}
+
+.table-container {
+    margin: 20px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mat-icon-button {
+    padding: 0;
+  }
+  
+  .mat-menu {
+    padding: 0;
+  }
+  

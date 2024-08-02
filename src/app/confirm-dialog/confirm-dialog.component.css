@@ -1,0 +1,24 @@
+.confirm-text-content {
+    margin-bottom: 50px;
+}
+
+.content-btn-confirm {
+    text-align: center;
+    width: 100%;
+}
+
+.content-btn-confirm button {
+    margin: 3px 17px;
+    padding: 25px;
+    width: 42%;
+}
+
+.cancel-btn-comp {
+    background-color: #eaecf1 !important;
+    color: #182f62 !important;
+}
+
+.confirm-btn-comp {
+    background-color: #f5df66 !important;
+    color: #182f62 !important;
+}

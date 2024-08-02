@@ -1,0 +1,14 @@
+<div mat-dialog-content>
+    <p class="confirm-text-content">¿Esta seguro que desea eliminar el producto <strong>{{name}}</strong> ?</p>
+</div>
+<hr>
+<div mat-dialog-actions>
+    <div class="content-btn-confirm">
+        <button mat-button class="cancel-btn-comp" (click)="onNoClick()">
+            Cancelar
+        </button>
+        <button mat-button class="confirm-btn-comp" [mat-dialog-close]="true" cdkFocusInitial>
+            Confirmar
+        </button>
+    </div>
+</div>

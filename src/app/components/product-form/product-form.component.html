@@ -1,0 +1,77 @@
+<app-header></app-header>
+
+<div class="background-tbl">
+    <div class="main-tbl-container">
+
+        <mat-card class="container-width-form" appearance="outlined">
+            <mat-card-content>
+                <h1 class="text-center">Formulario de Registro</h1>
+                <hr>
+
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                      <mat-form-field appearance="outline">
+                        <mat-label>ID</mat-label>
+                        <input matInput formControlName="id" placeholder="ID">
+                        <mat-error *ngIf="productForm.get('id')?.hasError('required')">
+                          Este campo es requerido!
+                        </mat-error>
+                        <mat-error *ngIf="productForm.get('id')?.hasError('minlength')">
+                          ID no válido!
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group form-right">
+                      <mat-form-field appearance="outline">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput formControlName="name" placeholder="Nombre">
+                        <mat-error *ngIf="productForm.get('name')?.hasError('required')">
+                          Este campo es requerido!
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                      <mat-form-field appearance="outline">
+                        <mat-label>Descripción</mat-label>
+                        <input matInput formControlName="description" placeholder="Descripción">
+                        <mat-error *ngIf="productForm.get('description')?.hasError('required')">
+                          Este campo es requerido!
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group form-right">
+                      <mat-form-field appearance="outline">
+                        <mat-label>Logo</mat-label>
+                        <input matInput formControlName="logo" placeholder="Logo">
+                        <mat-error *ngIf="productForm.get('logo')?.hasError('required')">
+                          Este campo es requerido!
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                      <mat-form-field appearance="outline">
+                        <mat-label>Fecha Liberación</mat-label>
+                        <input matInput [matDatepicker]="picker1" formControlName="date_release" placeholder="Fecha Liberación">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group form-right">
+                      <mat-form-field appearance="outline">
+                        <mat-label>Fecha Revisión</mat-label>
+                        <input matInput [matDatepicker]="picker2" formControlName="date_revision" placeholder="Fecha Revisión">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                    <div class="evt-actions text-center buttons">
+                        <button class="btn-type-cancel" mat-raised-button type="button" (click)="resetForm()">Reiniciar</button>
+                      <button class="btn-type-send" mat-raised-button type="submit">Enviar</button>
+                    </div>
+                  </form>
+
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+</div>
