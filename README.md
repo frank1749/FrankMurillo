@@ -27,30 +27,30 @@ Este es un proyecto Angular que implementa una tabla de productos con paginació
 ## Estructura del proyecto
 
    src/
-   |-- app/
-   |   |-- services/
-   |   |   |-- product.service.ts
-   |   |-- interfaces/
-   |   |   |-- product.interface.ts
-   |   |-- shared/
-   |   |   |-- header/
-   |   |-- components/
-   |   |   |-- product-form/
-   |   |       |-- product-form.component.ts
-   |   |       |-- product-form.component.html
-   |   |       |-- product-form.component.scss
-   |   |   |-- product-list/
-   |   |       |-- product-list.component.ts
-   |   |       |-- product-list.component.html
-   |   |       |-- product-list.component.scss
-   |   |-- app.module.ts
-   |   |-- app.component.ts
-   |   |-- app.component.html
-   |-- environments/
-   |   |-- environment.ts
-   |   |-- environment.prod.ts
-   |-- assets/
-   |-- styles.scss
+|-- app/
+| |-- services/
+| | |-- product.service.ts
+| |-- interfaces/
+| | |-- product.interface.ts
+| |-- shared/
+| | |-- header/
+| |-- components/
+| | |-- product-form/
+| | |-- product-form.component.ts
+| | |-- product-form.component.html
+| | |-- product-form.component.scss
+| | |-- product-list/
+| | |-- product-list.component.ts
+| | |-- product-list.component.html
+| | |-- product-list.component.scss
+| |-- app.module.ts
+| |-- app.component.ts
+| |-- app.component.html
+|-- environments/
+| |-- environment.ts
+| |-- environment.prod.ts
+|-- assets/
+|-- styles.scss
 
 ## Notas
 
