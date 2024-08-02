@@ -54,7 +54,7 @@ Este es un proyecto Angular que implementa una tabla de productos con paginació
 
 ## Notas
 
-   Cuando estes ejecutando el proyecto del backend procura que este "cors" dentro del método createExpressServer
+   Cuando estes ejecutando el proyecto del backend procura que el objeto "cors" este dentro del método createExpressServer
    en el archivo "main.ts".
 
 
